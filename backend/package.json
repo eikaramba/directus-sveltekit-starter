@@ -1,0 +1,16 @@
+{
+  "name": "directus",
+  "version": "1.0.0",
+  "description": "An example of how to use Directus with SvelteKit",
+  "main": "index.js",
+  "scripts": {
+    "dev": "CONFIG_PATH=.env npx directus start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "directus": "^10.8.2",
+    "sqlite3": "^5.1.6"
+  }
+}
