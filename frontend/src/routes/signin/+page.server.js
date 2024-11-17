@@ -59,7 +59,7 @@ const register = async ({ cookies, request, url }) => {
 	const redirectedFrom = url.searchParams.get('redirectedFrom')
 	
 	//a) First create the user
-	let signupRequest = await fetch(`${PUBLIC_APIURL}/users`, {
+	let signupRequest = await fetch(`${PUBLIC_APIURL}/users/register`, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
