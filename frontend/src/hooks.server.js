@@ -17,7 +17,7 @@ async function refreshAccessToken(cookies) {
       body: JSON.stringify({ refresh_token: cookies.get('refresh_token') }),
     });
   
-    if (res.status != 200) {
+    if (res.status >= 200) {
       cookies.delete('refresh_token', { path:'/' });
       cookies.delete('access_token', { path:'/' });
       throw new Error("Refresh Token Status != 200");
